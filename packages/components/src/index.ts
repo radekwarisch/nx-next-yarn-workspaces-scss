@@ -1,0 +1,1 @@
+export {Cmp} from './cmp';

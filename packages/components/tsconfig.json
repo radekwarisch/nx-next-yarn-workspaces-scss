@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    // Target latest version of ECMAScript.
+    "target": "esnext",
+    // Search under node_modules for non-relative imports.
+    "moduleResolution": "node",
+    // Enable strictest settings like strictNullChecks & noImplicitAny.
+    "strict": true,
+    // Ensure that .d.ts files are created by tsc, but not .js files
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    // Ensure that Babel can safely transpile files in the TypeScript project
+    "isolatedModules": true,
+    // Ignore node_modules
+    "skipLibCheck": true,
+    // Allow jsx
+    "jsx": "react",
+    // output emitted types to lib
+    "allowJs": true,
+    // avoid errors with missing .d types from dependency modules
+    "noImplicitAny": false,
+    // allow importing modules exported with export =
+    "allowSyntheticDefaultImports": true,
+    // disabled it, because when the first state is null (ie. initial state)
+    // then TS complain when we we assign other value because inferred value was null
+    "strictNullChecks": false,
+    "outDir": "./lib",
+    "composite": true
+  },
+  "include": ["src/"],
+  "exclude": [
+    "node_modules",
+    "src/**/*.spec.tsx",
+    "src/**/*.spec.ts"
+  ]
+}
