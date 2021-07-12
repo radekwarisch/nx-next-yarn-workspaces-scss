@@ -18,6 +18,9 @@
       }
     }
   },
+  "workspaceLayout": {
+    "libsDir": "packages"
+  },
   "projects": {
     "test": {
       "tags": []
